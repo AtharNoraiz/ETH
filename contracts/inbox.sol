@@ -1,14 +1,12 @@
 pragma solidity ^0.4.17;
 
-contract Inbox{
-    string private  messag;
-    function Inbox(string initialmsg) public{
-        messag = initialmsg;
+contract Inbox {
+    string public message;
+
+    function Inbox(string initialMessage) public {
+        message = initialMessage;
     }
-    function setmsg(string newmsg)public{
-        messag = newmsg;
-    }
-    function getmsg() public view returns (string){
-        return messag;
+    function setMessage(string newMessage) public {
+        message = newMessage;
     }
 }
